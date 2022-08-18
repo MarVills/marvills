@@ -4,6 +4,6 @@
 
 ## Hello, Thanks for visiting my profile.
 ### Do you know some interesting things?
-### lets do it and spread joy. 
+### lets try it and see what we got. 
 
 <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="200" height="200" alt="cat gif">
