@@ -1,0 +1,53 @@
+<!-- <app-splash-cursor /> -->
+<!-- <app-fluid-cursor></app-fluid-cursor> -->
+<!-- <div class="h-full w-full">asdfasdf</div> -->
+
+<div class="flex flex-col items-center justify-center gap-2 md:gap-3">
+  <!-- Profile Image -->
+  <div @profileAnim class="relative z-10">
+    <img
+      src="/images/profile.jpg"
+      alt="my-picture"
+      class="relative rounded-full mx-auto object-cover aspect-square z-10 ring-2 ring-offset-purple ring-offset-2 ring-blue-200"
+      width="180"
+      height="180"
+      loading="eager"
+    />
+  </div>
+
+  <!-- Greeting -->
+  <div
+    @textAnim
+    class="flex text-center md:tracking-wider mb-4 text-md md:text-lg lg:text-xl font-semibold"
+  >
+    Hi!
+    <span @waveAnim class="inline-block origin-bottom-left mx-1"> 👋 </span>
+    I'm Abdul Malek
+  </div>
+
+  <!-- Flip Words -->
+  <app-blur-fade-effect-wrapper [delay]="0.3">
+    <app-flip-words
+      class="text-center font-bold text-[40px] md:text-5xl lg:text-6xl leading-6"
+      [words]="words"
+    />
+  </app-blur-fade-effect-wrapper>
+
+  <!-- Description -->
+  <div class="flex gap-1 justify-center items-center my-4 max-w-screen-md">
+    <app-blur-fade-effect-wrapper [delay]="0.38">
+      <p
+        class="text-center md:tracking-wider text-base md:text-md text-zinc-200"
+      >
+        A {{ getCurrentAge() }}-year-old Software Engineering graduate from
+        <span class="text-[#cbacf9] font-semibold">Bangladesh</span>, passionate
+        about frontend development and driven by a creative mindset and
+        attention to detail
+      </p>
+    </app-blur-fade-effect-wrapper>
+  </div>
+
+  <!-- Lights -->
+  <app-light />
+  <app-light [left]="0" />
+</div>
